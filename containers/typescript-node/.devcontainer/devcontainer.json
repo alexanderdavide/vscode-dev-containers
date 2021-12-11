@@ -1,26 +1,42 @@
 {
-	"name": "Node.js & TypeScript",
+	"name": "typescript-node",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
 		// Append -bullseye or -buster to pin to an OS version.
 		// Use -bullseye variants on local on arm64/Apple Silicon.
-		"args": { 
+		"args": {
 			"VARIANT": "16-bullseye"
 		}
 	},
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
+	"settings": {
+		"sync.syncExtensions": false,
+		"sync.autoDownload": true,
+		"sync.autoUpload": false
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"adpyke.codesnap",
+		"codezombiech.gitignore",
+		"eamodio.gitlens",
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"dsznajder.es7-react-js-snippets",
+		"humao.rest-client",
+		"ms-azuretools.vscode-docker",
+		"ms-ossdata.vscode-postgresql",
+		"ms-vsliveshare.vsliveshare",
+		"shan.code-settings-sync",
+		"vscode-icons-team.vscode-icons",
+		"wakatime.vscode-wakatime"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
