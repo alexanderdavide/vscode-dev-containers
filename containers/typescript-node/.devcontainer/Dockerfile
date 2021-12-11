@@ -11,4 +11,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
 # RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
 # [Optional] Uncomment if you want to install more global node packages
-RUN su node -c "npm install -g semantic-git-commit-cli"
+RUN su node -c "npm install -g git-split-diffs semantic-git-commit-cli"
+RUN su node -c 'git config --global core.pager "git-split-diffs --color | less -RFX"'
