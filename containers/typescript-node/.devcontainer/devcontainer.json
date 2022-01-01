@@ -33,7 +33,8 @@
 		"shan.code-settings-sync",
 		"sleistner.vscode-fileutils",
 		"vscode-icons-team.vscode-icons",
-		"wakatime.vscode-wakatime"
+		"wakatime.vscode-wakatime",
+		"wix.vscode-import-cost"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
