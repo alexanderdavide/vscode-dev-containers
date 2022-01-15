@@ -10,7 +10,7 @@
 
 ## Variant: bullseye
 
-**Digest:** sha256:99bccec67b3ec022feafa84e6c4e86c8d5e6bb42ef48f7fdd8fd2ddb92f9a23e
+**Digest:** sha256:2e774d9b66e2e0bda172f691d0db8ad6b29a4e12935f3c9cbf30cf7a07b7445f
 
 **Tags:**
 ```
@@ -30,7 +30,7 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-8-jdk-bullseye
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Java](https://adoptopenjdk.net/) | 1.8.0_312<br />bash: line 1: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
+| [Java](https://adoptopenjdk.net/) | 1.8.0_312<br />11.0.13 | /usr/local/sdkman/candidates/java/current<br />/usr/local |
 
 **Tools installed using git**
 
@@ -87,14 +87,14 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-8-jdk-bullseye
 | unzip | 6.0-26 |
 | vim-tiny | 2:8.2.2434-3 |
 | wget | 1.21-1+b1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-12 |
 | zlib1g | 1:1.2.11.dfsg-2 |
 | zsh | 5.8-6+b2 |
 
 ## Variant: buster
 
-**Digest:** sha256:57ed9bedc8f8f592421fc3d1d9d4891e5edef0bc601213d9143939b4965707b8
+**Digest:** sha256:add453581f4514e9038de723b3e883799f0d1ee7978159ea12c067d01e33e22a
 
 **Tags:**
 ```
@@ -115,7 +115,7 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-8-jdk-buster
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Java](https://adoptopenjdk.net/) | 1.8.0_312<br />bash: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
+| [Java](https://adoptopenjdk.net/) | 1.8.0_312<br />11.0.13 | /usr/local/sdkman/candidates/java/current<br />/usr/local |
 
 **Tools installed using git**
 
@@ -173,7 +173,7 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-8-jdk-buster
 | unzip | 6.0-23+deb10u2 |
 | vim-tiny | 2:8.1.0875-5 |
 | wget | 1.20.1-1.1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-11+b1 |
 | zlib1g | 1:1.2.11.dfsg-1 |
 | zsh | 5.7.1-1 |

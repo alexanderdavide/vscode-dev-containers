@@ -12,7 +12,7 @@
 
 ## Variant: 17-bullseye
 
-**Digest:** sha256:466102a63b11891a99217f37df7bc966bfe561e4f8fc09f7af5729eb89ea58ca
+**Digest:** sha256:9c60c06aca1c0000b346d20f6a5a283814898012aa31006adb996d6bb96fb0da
 
 **Tags:**
 ```
@@ -91,14 +91,14 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-bullseye
 | unzip | 6.0-26 |
 | vim-tiny | 2:8.2.2434-3 |
 | wget | 1.21-1+b1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-12 |
 | zlib1g | 1:1.2.11.dfsg-2 |
 | zsh | 5.8-6+b2 |
 
 ## Variant: 17-buster
 
-**Digest:** sha256:276d983e130b82f226b0888d96351703d29353f278fd79259aa29e1acc0e2a4b
+**Digest:** sha256:008f9259946f3938d8fc7807824270d74dd5e583da1ddfda900094656b2774d0
 
 **Tags:**
 ```
@@ -175,14 +175,14 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-17-buster
 | unzip | 6.0-23+deb10u2 |
 | vim-tiny | 2:8.1.0875-5 |
 | wget | 1.20.1-1.1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-11+b1 |
 | zlib1g | 1:1.2.11.dfsg-1 |
 | zsh | 5.7.1-1 |
 
 ## Variant: 11-bullseye
 
-**Digest:** sha256:5732506449476ecfd4e620e398aec093cc37c383c400e9fc9d96f890ad4149e4
+**Digest:** sha256:d060df05610dde4d361dc403fee112cb5e05a79b7b8580ec80659cb4569970db
 
 **Tags:**
 ```
@@ -260,14 +260,14 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-11-jdk-bullseye
 | unzip | 6.0-26 |
 | vim-tiny | 2:8.2.2434-3 |
 | wget | 1.21-1+b1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-12 |
 | zlib1g | 1:1.2.11.dfsg-2 |
 | zsh | 5.8-6+b2 |
 
 ## Variant: 11-buster
 
-**Digest:** sha256:b74e6c151399cb94af5c612057188813e676fe0965110bc53ea4c85fb992b8a9
+**Digest:** sha256:ee49fce7d5a245ca89cf1640690b172bd9ed14febf33a80bfea3ffabf55b5de0
 
 **Tags:**
 ```
@@ -345,7 +345,7 @@ mcr.microsoft.com/vscode/devcontainers/java:dev-11-jdk-buster
 | unzip | 6.0-23+deb10u2 |
 | vim-tiny | 2:8.1.0875-5 |
 | wget | 1.20.1-1.1 |
-| yarn | 1.22.15-1 |
+| yarn | 1.22.17-1 |
 | zip | 3.0-11+b1 |
 | zlib1g | 1:1.2.11.dfsg-1 |
 | zsh | 5.7.1-1 |

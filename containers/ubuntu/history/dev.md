@@ -11,7 +11,7 @@
 
 ## Variant: hirsute
 
-**Digest:** sha256:97916061f88386b5f1dff6756006b2da85ceeff09a77b68292251258aa9f8c3d
+**Digest:** sha256:a032f0859e052dd7744beef199f60b9d5f753c01cbcc07d6f3d3d2afff7ccc99
 
 **Tags:**
 ```
@@ -32,7 +32,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu21.04
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5b987e59d0fce1a74bcfd51750c6f52d7c29c647 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 9c84c344d762b200de7acc794b9a0e7832144e7a | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
@@ -67,7 +67,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu21.04
 | nano | 5.4-2build1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1ubuntu2 |
-| openssh-client | 1:8.4p1-5ubuntu1.1 |
+| openssh-client | 1:8.4p1-5ubuntu1.2 |
 | procps | 2:3.3.16-5ubuntu3.1 |
 | psmisc | 23.4-2build1 |
 | rsync | 3.2.3-3ubuntu1 |
@@ -82,7 +82,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu21.04
 
 ## Variant: focal
 
-**Digest:** sha256:381e0e53470d75c4d40980205b2d080100891f99d6aafffedf2b3e102dcf78b9
+**Digest:** sha256:f5cca760bc78d3f2685729bfd7ee09a75463f9d2421fae58cc738f665975452e
 
 **Tags:**
 ```
@@ -104,7 +104,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5b987e59d0fce1a74bcfd51750c6f52d7c29c647 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 9c84c344d762b200de7acc794b9a0e7832144e7a | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
@@ -140,7 +140,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu
 | nano | 4.8-1ubuntu1 |
 | ncdu | 1.14.1-1 |
 | net-tools | 1.60+git20180626.aebd88e-1ubuntu1 |
-| openssh-client | 1:8.2p1-4ubuntu0.3 |
+| openssh-client | 1:8.2p1-4ubuntu0.4 |
 | procps | 2:3.3.16-1ubuntu2.3 |
 | psmisc | 23.3-1 |
 | rsync | 3.1.3-8ubuntu0.1 |
@@ -155,7 +155,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu
 
 ## Variant: bionic
 
-**Digest:** sha256:81aa037acc817cd3d7d88dc202bbabb0ad648a73803c8f807869f73706059154
+**Digest:** sha256:d9756fb1c43be53e237096866ce34d39668c5db59f5862106f21ad412e98e458
 
 **Tags:**
 ```
@@ -176,7 +176,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-ubuntu18.04
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5b987e59d0fce1a74bcfd51750c6f52d7c29c647 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 9c84c344d762b200de7acc794b9a0e7832144e7a | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
