@@ -1,5 +1,7 @@
 # Docker-from-Docker Install Script
 
+> Need to mount files from inside your container into new ones you create? You may need to use [docker-in-docker](./docker-in-docker.md) instead.
+
 *Adds the Docker CLI to a container along with a script to enable using a forwarded Docker socket within a container to run Docker commands.*
 
 **Script status**: Stable
@@ -57,7 +59,7 @@ If you have already built your development container, run the **Rebuild Containe
 
 ### Script use
 
-See the [`docker-from-docker`](../../containers/docker-from-docker) and [`docker-from-docker-compose`](....//containers/docker-from-docker) definition for a complete working example. However, here are the general steps to use the script:
+See the [`docker-from-docker`](../../containers/docker-from-docker) and [`docker-from-docker-compose`](../../containers/docker-from-docker-compose) definition for a complete working example. However, here are the general steps to use the script:
 
 1. Add [`docker-debian.sh`](../docker-debian.sh) or [`docker-redhat.sh`](../docker-redhat.sh) to `.devcontainer/library-scripts`
 
