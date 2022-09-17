@@ -11,7 +11,7 @@
 
 ## Variant: buster
 
-**Digest:** sha256:033d3a3a510bb5d30652d6aa44e71ccf788120588b83d7399931dbcaa89b1157
+**Digest:** sha256:bf9eae68dda70003f2ede266dd381b716342c20cc8affdbbc83abd2702808fef
 
 **Tags:**
 ```
@@ -32,7 +32,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian10
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 345976874550efa09fa7e9cdbe1215ce27d1541b | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 3668ec2a82250020ca0c285ef8b277f1385a8085 | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
@@ -44,20 +44,20 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian10
 | curl | 7.64.0-4+deb10u2 |
 | dialog | 1.3-20190211-1 |
 | git | 1:2.20.1-2+deb10u3 |
-| gnupg2 | 2.2.12-1+deb10u1 |
+| gnupg2 | 2.2.12-1+deb10u2 |
 | htop | 2.2.0-1+b1 |
 | iproute2 | 4.20.0-2+deb10u1 |
 | jq | 1.5+dfsg-2+b1 |
 | less | 487-0.1+b1 |
-| libc6 | 2.28-10 |
+| libc6 | 2.28-10+deb10u1 |
 | libgcc1 | 1:8.3.0-6 |
 | libgssapi-krb5-2 | 1.17-3+deb10u3 |
-| libicu63 | 63.1-6+deb10u2 |
+| libicu63 | 63.1-6+deb10u3 |
 | libkrb5-3 | 1.17-3+deb10u3 |
 | liblttng-ust0 | 2.10.3-1 |
-| libssl1.1 | 1.1.1d-0+deb10u7 |
+| libssl1.1 | 1.1.1n-0+deb10u3 |
 | libstdc++6 | 8.3.0-6 |
-| locales | 2.28-10 |
+| locales | 2.28-10+deb10u1 |
 | lsb-release | 10.2019051400 |
 | lsof | 4.91+dfsg-1 |
 | man-db | 2.8.5-2 |
@@ -75,15 +75,15 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian10
 | strace | 4.26-0.2 |
 | sudo | 1.8.27-1+deb10u3 |
 | unzip | 6.0-23+deb10u2 |
-| vim-tiny | 2:8.1.0875-5 |
+| vim-tiny | 2:8.1.0875-5+deb10u2 |
 | wget | 1.20.1-1.1 |
 | zip | 3.0-11+b1 |
-| zlib1g | 1:1.2.11.dfsg-1 |
+| zlib1g | 1:1.2.11.dfsg-1+deb10u1 |
 | zsh | 5.7.1-1+deb10u1 |
 
 ## Variant: bullseye
 
-**Digest:** sha256:6428f6cd16c18297eb396f28832e6bf099a91fc30eacc70ae9e5c764ae879c53
+**Digest:** sha256:99a07addf75ff3690699da608207c690699d7e483178a687b1c2b7cb1fd195aa
 
 **Tags:**
 ```
@@ -106,7 +106,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 345976874550efa09fa7e9cdbe1215ce27d1541b | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 3668ec2a82250020ca0c285ef8b277f1385a8085 | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
@@ -115,22 +115,22 @@ mcr.microsoft.com/vscode/devcontainers/base:dev
 | apt-transport-https | 2.2.4 |
 | apt-utils | 2.2.4 |
 | ca-certificates | 20210119 |
-| curl | 7.74.0-1.3+deb11u1 |
+| curl | 7.74.0-1.3+deb11u2 |
 | dialog | 1.3-20201126-1 |
 | git | 1:2.30.2-1 |
-| gnupg2 | 2.2.27-2 |
+| gnupg2 | 2.2.27-2+deb11u2 |
 | htop | 3.0.5-7 |
 | iproute2 | 5.10.0-4 |
 | jq | 1.6-2.1 |
 | less | 551-2 |
-| libc6 | 2.31-13+deb11u2 |
+| libc6 | 2.31-13+deb11u3 |
 | libgssapi-krb5-2 | 1.18.3-6+deb11u1 |
 | libicu67 | 67.1-7 |
 | libkrb5-3 | 1.18.3-6+deb11u1 |
 | liblttng-ust0 | 2.12.1-1 |
-| libssl1.1 | 1.1.1k-1+deb11u1 |
+| libssl1.1 | 1.1.1n-0+deb11u3 |
 | libstdc++6 | 10.2.1-6 |
-| locales | 2.31-13+deb11u2 |
+| locales | 2.31-13+deb11u3 |
 | lsb-release | 11.1.0 |
 | lsof | 4.93.2+dfsg-1.1 |
 | man-db | 2.9.4-2 |
@@ -138,25 +138,25 @@ mcr.microsoft.com/vscode/devcontainers/base:dev
 | manpages-dev | 5.10-1 |
 | manpages-posix | 2017a-2 |
 | manpages-posix-dev | 2017a-2 |
-| nano | 5.4-2 |
+| nano | 5.4-2+deb11u1 |
 | ncdu | 1.15.1-1 |
 | net-tools | 1.60+git20181103.0eebece-1 |
-| openssh-client | 1:8.4p1-5 |
+| openssh-client | 1:8.4p1-5+deb11u1 |
 | procps | 2:3.3.17-5 |
 | psmisc | 23.4-2 |
 | rsync | 3.2.3-4+deb11u1 |
 | strace | 5.10-1 |
 | sudo | 1.9.5p2-3 |
-| unzip | 6.0-26 |
+| unzip | 6.0-26+deb11u1 |
 | vim-tiny | 2:8.2.2434-3+deb11u1 |
 | wget | 1.21-1+deb11u1 |
 | zip | 3.0-12 |
-| zlib1g | 1:1.2.11.dfsg-2 |
+| zlib1g | 1:1.2.11.dfsg-2+deb11u1 |
 | zsh | 5.8-6+deb11u1 |
 
 ## Variant: stretch
 
-**Digest:** sha256:7532467f9f6d60415121291cc6685ed68df1e42a4f7b2f5530bc1d963e0b531f
+**Digest:** sha256:ef974ba81d3f685e92ab07e37e193ac8b0cad7515ae2bc391bfd0b1791b4fde9
 
 **Tags:**
 ```
@@ -177,7 +177,7 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian9
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 345976874550efa09fa7e9cdbe1215ce27d1541b | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 3668ec2a82250020ca0c285ef8b277f1385a8085 | /home/vscode/.oh-my-zsh |
 
 **Additional linux tools and packages**
 
@@ -200,8 +200,8 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian9
 | libicu57 | 57.1-6+deb9u5 |
 | libkrb5-3 | 1.15-1+deb9u3 |
 | liblttng-ust0 | 2.9.0-2+deb9u1 |
-| libssl1.0.2 | 1.0.2u-1~deb9u6 |
-| libssl1.1 | 1.1.0l-1~deb9u4 |
+| libssl1.0.2 | 1.0.2u-1~deb9u7 |
+| libssl1.1 | 1.1.0l-1~deb9u6 |
 | libstdc++6 | 6.3.0-18+deb9u1 |
 | locales | 2.24-11+deb9u4 |
 | lsb-release | 9.20161125 |
@@ -221,9 +221,9 @@ mcr.microsoft.com/vscode/devcontainers/base:dev-debian9
 | strace | 4.15-2 |
 | sudo | 1.8.19p1-2.1+deb9u3 |
 | unzip | 6.0-21+deb9u2 |
-| vim-tiny | 2:8.0.0197-4+deb9u5 |
+| vim-tiny | 2:8.0.0197-4+deb9u7 |
 | wget | 1.18-5+deb9u3 |
 | zip | 3.0-11+b1 |
-| zlib1g | 1:1.2.8.dfsg-5 |
+| zlib1g | 1:1.2.8.dfsg-5+deb9u1 |
 | zsh | 5.3.1-4+deb9u5 |
 

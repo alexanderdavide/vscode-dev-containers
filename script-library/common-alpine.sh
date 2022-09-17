@@ -11,21 +11,21 @@
 
 set -e
 
+# Switch to bash right away
+if [ -z "${BASH_SOURCE}" ] && [ "${SWITCHED_TO_BASH}" != "true" ]; then
+    apk add --no-cache bash
+    export SWITCHED_TO_BASH=true
+    exec /bin/bash "$0" "$@"
+    exit $?
+fi
+
 INSTALL_ZSH=${1:-"true"}
 USERNAME=${2:-"automatic"}
 USER_UID=${3:-"automatic"}
 USER_GID=${4:-"automatic"}
 INSTALL_OH_MYS=${5:-"true"}
-SCRIPT_DIR="$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)"
 MARKER_FILE="/usr/local/etc/vscode-dev-containers/common"
-
-# Switch to bash right away
-if [ "${SWITCHED_TO_BASH}" != "true" ]; then
-    apk add bash
-    export SWITCHED_TO_BASH=true
-    exec /bin/bash "$0" "$@"
-    exit $?
-fi
+SCRIPT_DIR="$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)"
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -143,7 +143,7 @@ else
     fi
 fi
 
-# Add add sudo support for non-root user
+# Add sudo support for non-root user
 if [ "${USERNAME}" != "root" ] && [ "${EXISTING_NON_ROOT_USER}" != "${USERNAME}" ]; then
     echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME
     chmod 0440 /etc/sudoers.d/$USERNAME

@@ -63,7 +63,6 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
     package_list="\
         openssh-clients \
         gnupg2 \
-        dirmngr \
         iproute \
         procps \
         lsof \
@@ -136,7 +135,7 @@ else
     fi
 fi
 
-# Add add sudo support for non-root user
+# Add sudo support for non-root user
 if [ "${USERNAME}" != "root" ] && [ "${EXISTING_NON_ROOT_USER}" != "${USERNAME}" ]; then
     echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME
     chmod 0440 /etc/sudoers.d/$USERNAME

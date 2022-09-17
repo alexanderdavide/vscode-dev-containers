@@ -46,6 +46,12 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
     USERNAME=root
 fi
 
+USERHOME="/home/$USERNAME"
+if [ "$USERNAME" = "root" ]; then
+    USERHOME="/root"
+fi
+
+
 # Get central common setting
 get_common_setting() {
     if [ "${common_settings_file_loaded}" != "true" ]; then
@@ -69,7 +75,7 @@ find_version_from_git_tags() {
     local repository=$2
     local prefix=${3:-"tags/v"}
     local separator=${4:-"."}
-    local last_part_optional=${5:-"false"}    
+    local last_part_optional=${5:-"false"}
     if [ "$(echo "${requested_version}" | grep -o "." | wc -l)" != "2" ]; then
         local escaped_separator=${separator//./\\.}
         local last_part
@@ -158,9 +164,11 @@ fi
 kubectl completion bash > /etc/bash_completion.d/kubectl
 
 # kubectl zsh completion
-mkdir -p "/home/${USERNAME}/.oh-my-zsh/completions"
-kubectl completion zsh > "/home/${USERNAME}/.oh-my-zsh/completions/_kubectl"
-chown -R "${USERNAME}" "/home/${USERNAME}/.oh-my-zsh"
+if [ -e "${USERHOME}}/.oh-my-zsh" ]; then
+    mkdir -p "${USERHOME}/.oh-my-zsh/completions"
+    kubectl completion zsh > "${USERHOME}/.oh-my-zsh/completions/_kubectl"
+    chown -R "${USERNAME}" "${USERHOME}/.oh-my-zsh"
+fi
 
 # Install Helm, verify signature and checksum
 echo "Downloading Helm..."
@@ -217,8 +225,8 @@ if [ "${MINIKUBE_VERSION}" != "none" ]; then
             MINIKUBE_VERSION="v${MINIKUBE_VERSION}"
         fi
     fi
-    # latest is also valid in the download URLs 
-    curl -sSL -o /usr/local/bin/minikube "https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-${architecture}"    
+    # latest is also valid in the download URLs
+    curl -sSL -o /usr/local/bin/minikube "https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-${architecture}"
     chmod 0755 /usr/local/bin/minikube
     if [ "$MINIKUBE_SHA256" = "automatic" ]; then
         MINIKUBE_SHA256="$(curl -sSL "https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-${architecture}.sha256")"
@@ -228,6 +236,10 @@ if [ "${MINIKUBE_VERSION}" != "none" ]; then
         echo '(!) minikube installation failed!'
         exit 1
     fi
+    # Create minikube folder with correct privs in case a volume is mounted here
+    mkdir -p "${USERHOME}/.minikube"
+    chown -R $USERNAME "${USERHOME}/.minikube"
+    chmod -R u+wrx "${USERHOME}/.minikube"
 fi
 
 if ! type docker > /dev/null 2>&1; then
