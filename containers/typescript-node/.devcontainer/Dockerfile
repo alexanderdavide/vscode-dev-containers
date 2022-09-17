@@ -11,11 +11,13 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
 # RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
 # [Optional] Uncomment if you want to install more global node packages
-RUN su node -c "npm install -g git-split-diffs semantic-git-commit-cli"
-RUN su node -c 'git config --global core.pager "git-split-diffs --color | less -RFX"'
+RUN su node -c "npm install -g semantic-git-commit-cli"
+
+RUN curl -L https://github.com/Wilfred/difftastic/releases/download/0.35.0/difft-x86_64-unknown-linux-gnu.tar.gz | tar xz -C /usr/bin
 
 USER node
 
 RUN echo "alias sgca='git add -A && sgc'" >> ~/.bashrc
+RUN git config --global diff.external difft
 
 USER root
